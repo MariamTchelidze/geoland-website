@@ -178,3 +178,8 @@ footer {
         display: none;
     }
 }
+@media (max-width: 320px){
+    #email {
+        width: 70%;
+    }
+}
