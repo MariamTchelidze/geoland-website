@@ -1,0 +1,167 @@
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #a5d8ee;
+    color: #537989;
+    font-weight: bold;
+}
+h1 {
+  color: #537989;
+}
+ h2 {
+  text-decoration: underline;
+  font-size: 36px;
+ }
+header {
+    background: #a5d8ee;
+    padding: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #537989;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner img {
+    width: 100%;
+    height: 500px;
+    object-fit:Cover;
+    filter: brightness(30%);
+}
+
+.banner-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-text h1 {
+    font-size: 3rem;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+}
+
+.attractions, .newsletter, .blog, .reviews {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.attraction-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.attraction-card {
+    background: #fdf1ec;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px #537989;
+}
+.attraction-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.newsletter input {
+    padding: 0.5rem;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.newsletter button {
+    padding: 0.5rem 1rem;
+    background: #F896B0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.newsletter button:hover {
+    background: #fad4de;
+}
+
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.post img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer {
+    background: #a5d8ee;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.social-links a {
+    color: #ffcc00;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+}
