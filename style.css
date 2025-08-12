@@ -25,7 +25,12 @@ header {
     max-width: 1200px;
     margin: 0 auto;
 }
-
+.fa-solid{
+    display: none;
+    height: 100px;
+    width: 100px;
+    color: #537989;
+}
 .logo {
     font-size: 1.5rem;
     color: white;
@@ -163,5 +168,13 @@ footer {
 @media (max-width: 768px) {
     .banner-text h1 {
         font-size: 2rem;
+    }
+    .fa-solid{
+        display: block;
+        height: 50px;
+        width: 50px;
+    }
+    .nav-links{
+        display: none;
     }
 }
