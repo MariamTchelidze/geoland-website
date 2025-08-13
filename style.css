@@ -17,7 +17,10 @@ header {
     background: #a5d8ee;
     padding: 1rem;
 }
-
+a {
+    text-decoration: none;
+    color: #537989;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
